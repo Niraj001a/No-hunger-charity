@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>No Hunger Charity</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    #aboutsec {
+
+      text-align: center;
+      font-weight: bold;
+      font-family: 'Ubuntu', sans-serif;
+      color: #a8a249;
+    }
+
+    #end {
+      font-family: 'Ubuntu', sans-serif;
+      color: #b88b47;
+    }
+
+    .donationbox {
+      display: flex;
+      justify-content: center;
+      margin: 16px;
+      padding: 6px;
+
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    #Name,
+    #Email,
+    #City,
+    #mobile {
+      width: 210px;
+      height: 34px;
+      padding: 7px 13px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #57390d;
+    }
+
+    #submit {
+      background-color: #b9b251;
+      padding: 4px 24px;
+      margin-left: 72px;
+      border-radius: 10px;
+
+
+    }
+
+
+
+    #terms {
+      margin-top: 5px;
+      margin-right: 5px;
+      margin-left: 55px;
+    }
+
+    #Lname {
+      padding-left: 12px;
+      padding-right: 20px;
+    }
+
+    #Lcity {
+      padding-left: 22px;
+      padding-right: 40px;
+    }
+
+    #Lemail {
+      padding-left: 17px;
+      padding-right: 21px;
+    }
+
+    #Lmob {
+      padding-right: 22px;
+    }
+    #Tlogo{
+      padding-left: 4px;
+      font-size: 13px;
+    }
+  </style>
+  <script>
+    function razorpaypage() {
+      alert ("form submitted successfully! now plz Donate us!");
+      window.open("https://rzp.io/l/o21iqNK");
+    }
+  </script>
+  <script>
+    function contactform() {
+      alert(" Submitted successfully! Stay tuned,We will Contact you soon! ");
+ 
+}
+</script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+
+
+      <!-- our logo -->
+      <a href="index.html" class="logo me-auto "><img src="assets/img/logo.png" alt="" class="img-fluid"><span id="Tlogo">No Hunger Charity</span></a>
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="ourwork.html">Our Work</a></li>
+          <li><a href="whydonate.html">why Donate</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="DonateUs.html" class="get-started-btn">Donate Us</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" data-aos="fade-in">
+
+    <!-- ======= Donate us header section======= -->
+    <div class="breadcrumbs">
+      <div class="container">
+
+        <h5><b>“Thousands of candles can be lighted from a single candle, and the life of the candle will not be
+            shortened.” </b>--Buddha</h5>
+        <h4> We as NGO team need your Financial support to help the Hunger by feeding </h4>
+      </div>
+    </div><!-- End Donate us header section-->
+    <br>
+    <h3 id="aboutsec">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Donation form</h3>
+
+    <!-- --------donate us form----------- -->
+    <!-- razor link -->
+
+
+    <form action="donationform.php" method="post" onsubmit="razorpaypage()">
+      <div class="donationbox">
+        <label id="Lname" for="Name"> Name <span style="font-weight: bolder;">*</span> </label>
+        <input type="text" placeholder="Enter your good Name" id="Name" name="Name" required>
+      </div>
+
+      <div class="donationbox">
+        <label id="Lcity" for="City">City</label>
+        <input type="text" placeholder="Enter your city(optional)" name="City" id="City">
+      </div>
+
+      <div class="donationbox">
+        <label id="Lemail" for="Email"> Email <span style="font-weight: bolder;">*</span> </label>
+
+        <input type="email" placeholder="Enter your Email" name="Email" id="Email" required>
+      </div>
+
+      <div class="donationbox">
+        <label for="mobile" id="Lmob">Contact <span style="font-weight: bolder;">*</span></label>
+        <input type="number" placeholder="Enter mobile number" name="mobile" id="mobile" required>
+      </div>
+      <div class="donationbox">
+        <input id="terms" type="checkbox" required>
+        <label for="terms">I trust No Hunger Charity NGO</label>
+      </div>
+
+      <div class="donationbox">
+
+        <input type="submit" id="submit" name="submit" value="Pay now">
+        
+      </div>
+
+    </form>
+    <hr>
+    <!-- //form razorpay code........................ -->
+
+    <!-- End form -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1134" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Visitors</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="513" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>people Donated</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="51" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Our Team</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="437300" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>Amount helped</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>No Hunger Charity</h4>
+            <p>
+              Ara, Bhojpur <br>
+              Bihar 802301<br>
+              India <br><br>
+              <strong>Phone:</strong> +91 9123431217<br>
+              <strong>Email:</strong> nohungercharity@gmail.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ourwork.html">Our work</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="whydonate.html">Why to donate</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="assets/img/logo.png" target="_blank">Our logo</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ourwork.html">Feeding Orphanage
+                </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="ourwork.html">Feeding Streetside</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="whydonate.html">How end hunger</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="DonateUs.html">Donate us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our NGO team</h4>
+            <p>For joining our team drop your email here and click join we will guide you ! :)</p>
+            <form action="NGOjoin.php" method="post" onsubmit="contactform()">
+              <input type="email" name="Email" required>
+              <input type="submit" name="join" value="join">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>NO HUNGER CHARITY</span></strong>. All Rights Reserved
+        </div>
+
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
