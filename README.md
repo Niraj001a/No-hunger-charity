@@ -1,4 +1,4 @@
-I used HTML, CSS for giving the formet and desiging of my website No Hunger Charity. 
+I used HTML, CSS for giving the format and desiging of my website No Hunger Charity. 
 For connnecting it's several button i used Javascript.
 For connecting the Database with my web site i used php language to transfer the data entered in frontend to my backend.
 Data transfered at the backend is stored in the database table using Mysql language.
